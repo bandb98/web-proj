@@ -8,7 +8,7 @@ const packages = [
   "Hygiene & Shower Package",
   "Hair Care Package",
   "Tip to Toe Package",
-  "Tick-Free Package",
+  "Tick Free Package",
 ];
 
 export default function PackageSelector() {

@@ -14,28 +14,24 @@ export default function GroomingPage() {
   const packages = [
     {
       name: 'Hygiene & Shower Package',
-      desc: 'The essential refresh for a clean, happy pet.',
-      includes: ['Deep cleansing bath', 'Professional blow-dry', 'Nail trimming & filing', 'Ear cleaning & hair removal', 'Sanitary trim']
+      desc: 'Clean. Fresh. Happy.',
+      includes: ['Full bath with shampoo & conditioner', 'Nail clipping', 'Ear cleaning', 'Eye cleaning', 'Combing & brushing', 'Blow dry']
     },
     {
       name: 'Hair Care Package',
-      desc: 'Perfect for maintaining healthy, tangle-free coats.',
-      includes: ['Everything in Hygiene Package', 'Deep coat conditioning', 'Thorough brush-out', 'De-matting treatment', 'Paw pad trim']
+      desc: 'Well groomed. Well loved.',
+      includes: ['Zero trimming', 'Full body bath & conditioning', 'Blow dry', 'Nail clipping & filing', 'Ears cleaning', 'Herbal perfume spray', 'Teeth cleaning', 'Sanitary cuts (under face, ears, paws)']
     },
     {
       name: 'Tip to Toe Package',
-      desc: 'The ultimate full-body styling and spa session.',
-      includes: ['Everything in Hair Care', 'Full body haircut/styling', 'Breed-specific scissor work', 'Teeth wiping', 'Premium pet cologne']
+      desc: 'Complete care from head to tail.',
+      includes: ['Full body haircut with hair styling/trimming', 'Full body bath & conditioning', 'Blow dry', 'Nail clipping & filing', 'Ears cleaning', 'Herbal perfume spray', 'Teeth cleaning', 'Paw massage', 'Paw wax', 'Sanitary cuts']
     },
     {
-      name: 'Tick-Free Package',
-      desc: 'Targeted relief from pests and skin irritation.',
-      includes: ['Medicated anti-tick bath', 'Manual tick removal', 'Soothing skin treatment', 'Spot-on application (if requested)']
+      name: 'Tick Free Package',
+      desc: 'Safe. Protected. Happy.',
+      includes: ['Gland cleaning', 'Paw wax', 'Calm massage', 'Sanitary cutting', 'De-shedding treatment', 'Tick & flea treatment', 'Fungal infection treatment', 'Full body bath & conditioning', 'Blow dry', 'Nail clipping & filing', 'Ears cleaning', 'Herbal perfume spray', 'Teeth cleaning']
     }
-  ];
-
-  const breedSpecialties = [
-    'Bichon Frise', 'Poodle', 'Chow Chow', 'Shih Tzu'
   ];
 
   const faqs = [

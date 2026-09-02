@@ -168,11 +168,11 @@ export default function Navbar() {
             </div>
 
             <a
-              href="tel:+919677555003"
+              href="tel:+919677555002"
               className="flex items-center justify-center gap-2 w-full py-4 border border-taupe-200 text-forest-900 rounded-full font-medium hover:bg-oatmeal transition-colors"
             >
               <Phone size={18} />
-              <span>+91 96775 55003</span>
+              <span>+91 96775 55002</span>
             </a>
             <a
               href={getWhatsAppLink("Hi, I'd like to know more about your services.")}

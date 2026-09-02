@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
-import { Scissors, GraduationCap, PawPrint, Dog, Heart } from 'lucide-react';
+import CertificateGallery from '@/components/ui/CertificateGallery';
+import { Scissors, GraduationCap, PawPrint, Dog, Heart, ShieldCheck } from 'lucide-react';
 import { getWhatsAppLink } from '@/lib/utils';
 
 export const metadata: Metadata = {
@@ -94,6 +95,26 @@ export default function ServicesPage() {
               );
             })}
           </div>
+        </div>
+      </section>
+
+      {/* Certified & Trusted Section */}
+      <section className="py-20 lg:py-28 bg-oatmeal border-t border-taupe-200">
+        <div className="max-w-7xl mx-auto px-6">
+          <AnimatedSection className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/10 rounded-full mb-6">
+              <ShieldCheck className="w-4 h-4 text-emerald-600" />
+              <span className="text-emerald-600 text-sm font-semibold uppercase tracking-wider">Verified Credentials</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-forest-900 font-heading mb-4">
+              Certified & <span className="text-brass-500">Trusted</span>
+            </h2>
+            <p className="text-taupe-600 text-lg max-w-2xl mx-auto">
+              Our lead trainer holds professionally recognized certifications in both grooming and canine training. Tap any certificate to view in full.
+            </p>
+          </AnimatedSection>
+
+          <CertificateGallery />
         </div>
       </section>
     </main>

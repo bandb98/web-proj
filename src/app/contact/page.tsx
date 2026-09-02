@@ -39,8 +39,8 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-xl font-bold text-forest-900 mb-2">WhatsApp / Phone</h3>
                   <p className="text-taupe-600 mb-3">Fastest way to reach us for bookings.</p>
-                  <a href="https://wa.me/919677555003" target="_blank" rel="noopener noreferrer" className="text-brass-600 font-semibold hover:text-brass-500 transition-colors block">
-                    +91 96775 55003
+                  <a href="https://wa.me/919677555002" target="_blank" rel="noopener noreferrer" className="text-brass-600 font-semibold hover:text-brass-500 transition-colors block">
+                    +91 96775 55002
                   </a>
                 </div>
               </div>

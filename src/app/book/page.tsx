@@ -87,7 +87,7 @@ export default function LandingPage() {
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
-              href="tel:+919677555003"
+              href="tel:+919677555002"
               className="inline-flex items-center gap-3 border-2 border-white/20 hover:border-brass-400 text-white font-semibold px-10 py-4 rounded-full text-lg transition-all duration-300 hover:bg-white/5"
             >
               <Phone className="w-5 h-5" />
