@@ -15,22 +15,22 @@ export default function GroomingPage() {
     {
       name: 'Hygiene & Shower Package',
       desc: 'Clean. Fresh. Happy.',
-      includes: ['Full bath with shampoo & conditioner', 'Nail clipping', 'Ear cleaning', 'Eye cleaning', 'Combing & brushing', 'Blow dry']
+      includes: ['Full bath with shampoo & conditioner', 'Nail clipping', 'Ear cleaning', 'Eye cleaning', 'Combing & brushing', 'Blow dry', 'Sanitary trim']
     },
     {
       name: 'Hair Care Package',
       desc: 'Well groomed. Well loved.',
-      includes: ['Zero trimming', 'Full body bath & conditioning', 'Blow dry', 'Nail clipping & filing', 'Ears cleaning', 'Herbal perfume spray', 'Teeth cleaning', 'Sanitary cuts (under face, ears, paws)']
+      includes: ['Zero trimming', 'Full body bath & conditioning', 'Blow dry', 'Nail clipping & filing', 'Ears cleaning', 'Herbal perfume spray', 'Teeth cleaning', 'Sanitary cuts (under face, ears, paws)', 'Deep coat conditioning', 'Thorough brush-out', 'De-matting treatment', 'Paw pad trim']
     },
     {
       name: 'Tip to Toe Package',
       desc: 'Complete care from head to tail.',
-      includes: ['Full body haircut with hair styling/trimming', 'Full body bath & conditioning', 'Blow dry', 'Nail clipping & filing', 'Ears cleaning', 'Herbal perfume spray', 'Teeth cleaning', 'Paw massage', 'Paw wax', 'Sanitary cuts']
+      includes: ['Full body haircut with hair styling/trimming', 'Full body bath & conditioning', 'Blow dry', 'Nail clipping & filing', 'Ears cleaning', 'Herbal perfume spray', 'Teeth cleaning', 'Paw massage', 'Paw wax', 'Sanitary cuts', 'Breed-specific scissor work']
     },
     {
       name: 'Tick Free Package',
       desc: 'Safe. Protected. Happy.',
-      includes: ['Gland cleaning', 'Paw wax', 'Calm massage', 'Sanitary cutting', 'De-shedding treatment', 'Tick & flea treatment', 'Fungal infection treatment', 'Full body bath & conditioning', 'Blow dry', 'Nail clipping & filing', 'Ears cleaning', 'Herbal perfume spray', 'Teeth cleaning']
+      includes: ['Gland cleaning', 'Paw wax', 'Calm massage', 'Sanitary cutting', 'De-shedding treatment', 'Tick & flea treatment', 'Fungal infection treatment', 'Full body bath & conditioning', 'Blow dry', 'Nail clipping & filing', 'Ears cleaning', 'Herbal perfume spray', 'Teeth cleaning', 'Manual tick removal', 'Soothing skin treatment', 'Spot-on application (if requested)']
     }
   ];
 
