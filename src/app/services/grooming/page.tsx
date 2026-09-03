@@ -20,7 +20,7 @@ export default function GroomingPage() {
     {
       name: 'Hair Care Package',
       desc: 'Well groomed. Well loved.',
-      includes: ['Zero trimming', 'Full body bath & conditioning', 'Blow dry', 'Nail clipping & filing', 'Ears cleaning', 'Herbal perfume spray', 'Teeth cleaning', 'Sanitary cuts (under face, ears, paws)', 'Deep coat conditioning', 'Thorough brush-out', 'De-matting treatment', 'Paw pad trim']
+      includes: ['Zero trimming', 'Full body bath & conditioning', 'Blow dry', 'Nail clipping & filing', 'Ears cleaning', 'Herbal perfume spray', 'Teeth cleaning', 'Sanitary cuts (under face, ears, paws)', 'Deep coat conditioning', 'Thorough brush-out', 'Paw pad trim']
     },
     {
       name: 'Tip to Toe Package',

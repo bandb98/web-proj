@@ -61,50 +61,6 @@ export default function TrainingPage() {
         </div>
       </section>
 
-      {/* Philosophy Section */}
-      <AnimatedSection className="py-24 bg-white border-b border-taupe-200">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <Brain className="w-12 h-12 text-brass-500 mx-auto mb-6" />
-          <h2 className="text-3xl md:text-4xl font-bold text-forest-900 mb-8 font-heading">
-            Our Training <span className="text-brass-500">Philosophy</span>
-          </h2>
-          <p className="text-xl leading-relaxed text-taupe-600 mb-8">
-            Dogs learn best in short, highly-focused bursts. That's why our sessions are strictly <strong>25 to 45 minutes</strong>—enough to challenge their minds without exhausting them. Every session builds on the last, creating lasting behavioral change through positive reinforcement and structured repetition.
-          </p>
-          <div className="inline-flex items-center gap-2 px-6 py-3 bg-sage-50 text-forest-900 rounded-full border border-sage-300 font-medium shadow-sm">
-            <HeartHandshake className="w-5 h-5 text-brass-600" />
-            We train the dog. We coach the owner.
-          </div>
-        </div>
-      </AnimatedSection>
-
-      {/* The Journey */}
-      <section className="py-24 bg-oatmeal">
-        <div className="max-w-7xl mx-auto px-6">
-          <AnimatedSection className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-forest-900 font-heading mb-4">Your Dog's Training Journey</h2>
-            <p className="text-taupe-600 max-w-2xl mx-auto text-lg">A structured, 4-step process to ensure lasting results.</p>
-          </AnimatedSection>
-
-          <div className="grid md:grid-cols-4 gap-6">
-            {[
-              { icon: <Target />, title: "1. Assessment", desc: "We evaluate your dog's temperament, triggers, and your specific goals as an owner." },
-              { icon: <Brain />, title: "2. Custom Plan", desc: "No cookie-cutter programs. We tailor the curriculum to your dog's breed and personality." },
-              { icon: <Clock />, title: "3. Active Sessions", desc: "25-45 minutes of intensive, rewards-based professional handling." },
-              { icon: <User />, title: "4. Owner Handover", desc: "We teach YOU the commands and timing so the behavior sticks when we leave." }
-            ].map((step, i) => (
-              <AnimatedSection key={i} delay={i * 100} className="bg-white p-8 rounded-3xl border border-taupe-200 hover:border-brass-400 hover:shadow-lg transition-all duration-300 relative overflow-hidden group">
-                <div className="w-12 h-12 bg-forest-900 rounded-full flex items-center justify-center text-brass-400 mb-6 group-hover:scale-110 transition-transform">
-                  {step.icon}
-                </div>
-                <h3 className="text-xl font-bold text-forest-900 mb-3">{step.title}</h3>
-                <p className="text-taupe-600 text-sm leading-relaxed">{step.desc}</p>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Programs & FAQs */}
       <section className="py-24 lg:py-32 bg-pearl">
         <div className="max-w-7xl mx-auto px-6">
@@ -181,6 +137,50 @@ export default function TrainingPage() {
               </AnimatedSection>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      {/* Philosophy Section */}
+      <AnimatedSection className="py-24 bg-white border-t border-b border-taupe-200">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <Brain className="w-12 h-12 text-brass-500 mx-auto mb-6" />
+          <h2 className="text-3xl md:text-4xl font-bold text-forest-900 mb-8 font-heading">
+            Our Training <span className="text-brass-500">Philosophy</span>
+          </h2>
+          <p className="text-xl leading-relaxed text-taupe-600 mb-8">
+            Dogs learn best in short, highly-focused bursts. That's why our sessions are strictly <strong>25 to 45 minutes</strong>—enough to challenge their minds without exhausting them. Every session builds on the last, creating lasting behavioral change through positive reinforcement and structured repetition.
+          </p>
+          <div className="inline-flex items-center gap-2 px-6 py-3 bg-sage-50 text-forest-900 rounded-full border border-sage-300 font-medium shadow-sm">
+            <HeartHandshake className="w-5 h-5 text-brass-600" />
+            We train the dog. We coach the owner.
+          </div>
+        </div>
+      </AnimatedSection>
+
+      {/* The Journey */}
+      <section className="py-24 bg-oatmeal">
+        <div className="max-w-7xl mx-auto px-6">
+          <AnimatedSection className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-forest-900 font-heading mb-4">Your Dog's Training Journey</h2>
+            <p className="text-taupe-600 max-w-2xl mx-auto text-lg">A structured, 4-step process to ensure lasting results.</p>
+          </AnimatedSection>
+
+          <div className="grid md:grid-cols-4 gap-6">
+            {[
+              { icon: <Target />, title: "1. Assessment", desc: "We evaluate your dog's temperament, triggers, and your specific goals as an owner." },
+              { icon: <Brain />, title: "2. Custom Plan", desc: "No cookie-cutter programs. We tailor the curriculum to your dog's breed and personality." },
+              { icon: <Clock />, title: "3. Active Sessions", desc: "25-45 minutes of intensive, rewards-based professional handling." },
+              { icon: <User />, title: "4. Owner Handover", desc: "We teach YOU the commands and timing so the behavior sticks when we leave." }
+            ].map((step, i) => (
+              <AnimatedSection key={i} delay={i * 100} className="bg-white p-8 rounded-3xl border border-taupe-200 hover:border-brass-400 hover:shadow-lg transition-all duration-300 relative overflow-hidden group">
+                <div className="w-12 h-12 bg-forest-900 rounded-full flex items-center justify-center text-brass-400 mb-6 group-hover:scale-110 transition-transform">
+                  {step.icon}
+                </div>
+                <h3 className="text-xl font-bold text-forest-900 mb-3">{step.title}</h3>
+                <p className="text-taupe-600 text-sm leading-relaxed">{step.desc}</p>
+              </AnimatedSection>
+            ))}
           </div>
         </div>
       </section>
