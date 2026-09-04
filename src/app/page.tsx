@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { Scissors, GraduationCap, PawPrint, Heart, Shield, ChevronDown, ArrowRight } from "lucide-react";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import ChampionshipCarousel from "@/components/ui/ChampionshipCarousel";
 import { getWhatsAppLink } from "@/lib/utils";
 
 export const metadata: Metadata = {
@@ -104,6 +105,68 @@ export default function Home() {
         </div>
       </section>
       
+      {/* Championship Showcase */}
+      <section className="py-24 lg:py-32 bg-forest-900 relative overflow-hidden bg-noise">
+        {/* Decorative glow */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-brass-500/8 rounded-full blur-[100px] pointer-events-none"></div>
+        
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <AnimatedSection animation="fade-up">
+            <div className="text-center mb-16">
+              <span className="text-brass-500 text-xs font-bold tracking-[0.3em] uppercase mb-4 block">Award-Winning Excellence</span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white font-heading">
+                Our Dogs Don&apos;t Just Train.<br />
+                <span className="text-brass-400">They Win.</span>
+              </h2>
+            </div>
+          </AnimatedSection>
+
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Photo */}
+            <AnimatedSection animation="fade-up" delay={200}>
+              <ChampionshipCarousel />
+            </AnimatedSection>
+
+            {/* Stats & Description */}
+            <AnimatedSection animation="fade-up" delay={400}>
+              <div className="space-y-8">
+                <div>
+                  <p className="text-xl md:text-2xl text-taupe-200 leading-relaxed font-light mb-6">
+                    A dog trained by the <span className="text-brass-400 font-medium">Bark &amp; Bond Team</span> went on to win the <span className="text-white font-semibold">Overall Championship</span> at a prestigious dog show — a testament to the discipline, dedication, and elite handling that defines Bark &amp; Bond.
+                  </p>
+                  <p className="text-taupe-400 leading-relaxed">
+                    This isn&apos;t just training. This is building champions. The same level of expertise and care goes into every session, whether it&apos;s basic obedience or competition preparation.
+                  </p>
+                </div>
+
+                {/* Achievement Stats */}
+                <div className="grid grid-cols-3 gap-6">
+                  <div className="text-center p-4 rounded-2xl bg-forest-800/50 border border-forest-700">
+                    <span className="text-3xl md:text-4xl font-bold text-brass-400 block mb-1">🏆</span>
+                    <span className="text-xs text-taupe-300 uppercase tracking-wider font-medium">Overall Champion</span>
+                  </div>
+                  <div className="text-center p-4 rounded-2xl bg-forest-800/50 border border-forest-700">
+                    <span className="text-3xl md:text-4xl font-bold text-brass-400 block mb-1">8+</span>
+                    <span className="text-xs text-taupe-300 uppercase tracking-wider font-medium">Prizes Won</span>
+                  </div>
+                  <div className="text-center p-4 rounded-2xl bg-forest-800/50 border border-forest-700">
+                    <span className="text-3xl md:text-4xl font-bold text-brass-400 block mb-1">5+</span>
+                    <span className="text-xs text-taupe-300 uppercase tracking-wider font-medium">Years of Expertise</span>
+                  </div>
+                </div>
+
+                <a 
+                  href="/services/training" 
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-brass-500 hover:bg-brass-400 text-forest-900 font-semibold rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(214,163,101,0.3)]"
+                >
+                  Explore Our Training <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
       {/* 03: Services Overview */}
       <section className="py-24 lg:py-40 bg-white relative">
         <div className="max-w-7xl mx-auto px-6">

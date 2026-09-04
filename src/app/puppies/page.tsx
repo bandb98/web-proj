@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
+import BreedCarousel from "@/components/ui/BreedCarousel";
+
 import { getWhatsAppLink } from "@/lib/utils";
 import { Search, ShieldCheck, Stethoscope, Handshake, HeartHandshake, ArrowRight, Info } from "lucide-react";
 
@@ -41,11 +43,7 @@ const steps = [
   },
 ];
 
-const breeds = [
-  { name: "Labrador Retriever", trait: "Friendly & Loyal" },
-  { name: "Golden Retriever", trait: "Intelligent & Gentle" },
-  { name: "German Shepherd", trait: "Protective & Alert" }
-];
+
 
 export default function PuppiesPage() {
   return (
@@ -82,26 +80,7 @@ export default function PuppiesPage() {
             </div>
           </AnimatedSection>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {breeds.map((breed, idx) => (
-              <AnimatedSection key={breed.name} delay={idx * 100} className="bg-white rounded-3xl p-8 border border-taupe-200 shadow-sm hover:shadow-lg hover:border-brass-400 transition-all text-center group">
-                {/* Visual Placeholder for Image */}
-                <div className="w-full aspect-square bg-sage-50 rounded-2xl mb-6 flex items-center justify-center border border-taupe-200 group-hover:border-brass-300 transition-colors overflow-hidden">
-                  <span className="text-taupe-400 text-sm font-medium">Image Placeholder</span>
-                </div>
-                <h3 className="text-2xl font-bold text-forest-900 mb-2 font-heading">{breed.name}</h3>
-                <p className="text-brass-600 font-medium text-sm tracking-wider uppercase mb-6">{breed.trait}</p>
-                <a 
-                  href={getWhatsAppLink(`Hello! I'm interested in getting a ${breed.name} puppy. Could you tell me about current availability?`)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block w-full py-3 px-6 text-sm font-semibold uppercase tracking-wider text-forest-900 border-2 border-forest-900 hover:bg-forest-900 hover:text-white rounded-full transition-colors"
-                >
-                  Check Availability
-                </a>
-              </AnimatedSection>
-            ))}
-          </div>
+          <BreedCarousel />
         </div>
       </section>
 
