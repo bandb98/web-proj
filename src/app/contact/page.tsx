@@ -54,8 +54,8 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-xl font-bold text-forest-900 mb-2">Email</h3>
                   <p className="text-taupe-600 mb-3">Drop us a line for detailed queries.</p>
-                  <a href="mailto:thefurstylist98@gmail.com" className="text-forest-900 font-semibold hover:text-brass-500 transition-colors">
-                    thefurstylist98@gmail.com
+                  <a href="mailto:barkandbond98@gmail.com" className="text-forest-900 font-semibold hover:text-brass-500 transition-colors">
+                    barkandbond98@gmail.com
                   </a>
                 </div>
               </div>

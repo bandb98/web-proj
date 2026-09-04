@@ -101,7 +101,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:thefurstylist98@gmail.com"
+                  href="mailto:barkandbond98@gmail.com"
                   className="text-taupe-500 hover:text-white text-sm transition-colors duration-300"
                 >
                   Email Us

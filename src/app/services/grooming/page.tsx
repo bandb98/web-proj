@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
+import CertificateGallery from "@/components/ui/CertificateGallery";
+
 import { FAQAccordion } from '@/components/ui/FAQAccordion';
 import PackageSelector from '@/components/ui/PackageSelector';
 import { getWhatsAppLink } from '@/lib/utils';
@@ -118,6 +120,10 @@ export default function GroomingPage() {
                     </div>
                   ))}
                 </div>
+              </AnimatedSection>
+              
+              <AnimatedSection delay={200} className="mt-16 pt-16 border-t border-taupe-200">
+                <CertificateGallery type="grooming" />
               </AnimatedSection>
             </div>
 

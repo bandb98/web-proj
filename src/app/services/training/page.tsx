@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import { FAQAccordion } from '@/components/ui/FAQAccordion';
+import CertificateGallery from "@/components/ui/CertificateGallery";
+
 import { getWhatsAppLink } from '@/lib/utils';
 import { Check, Clock, ShieldCheck, ArrowRight, Brain, Target, User, HeartHandshake } from 'lucide-react';
 
@@ -119,6 +121,10 @@ export default function TrainingPage() {
                     Enquire Now <ArrowRight size={16} />
                   </a>
                 </div>
+              </AnimatedSection>
+
+              <AnimatedSection delay={200} className="mt-16 pt-16 border-t border-taupe-200">
+                <CertificateGallery type="training" />
               </AnimatedSection>
             </div>
 

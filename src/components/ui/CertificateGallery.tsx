@@ -4,7 +4,11 @@ import React, { useState } from 'react';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import { X, Scissors, GraduationCap } from 'lucide-react';
 
-export default function CertificateGallery() {
+interface CertificateGalleryProps {
+  type?: 'all' | 'grooming' | 'training';
+}
+
+export default function CertificateGallery({ type = 'all' }: CertificateGalleryProps) {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   // Lock body scroll when modal is open
@@ -47,30 +51,34 @@ export default function CertificateGallery() {
     <div className="space-y-16">
       
       {/* Grooming Certifications */}
-      <div>
-        <div className="flex items-center justify-center md:justify-start gap-3 mb-8 max-w-4xl mx-auto">
-          <Scissors className="w-6 h-6 text-brass-500" />
-          <h3 className="text-2xl font-bold text-forest-900 font-heading">Grooming Expertise</h3>
-          <div className="flex-1 h-px bg-taupe-200 ml-6 hidden sm:block"></div>
+      {(type === 'all' || type === 'grooming') && (
+        <div>
+          <div className="flex items-center justify-center md:justify-start gap-3 mb-8 max-w-4xl mx-auto">
+            <Scissors className="w-6 h-6 text-brass-500" />
+            <h3 className="text-2xl font-bold text-forest-900 font-heading">Certified Professional Groomer</h3>
+            <div className="flex-1 h-px bg-taupe-200 ml-6 hidden sm:block"></div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <CertificateCard num={1} title="Professional Grooming Certification 1" />
+            <CertificateCard num={4} title="Professional Grooming Certification 2" />
+          </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <CertificateCard num={1} title="Professional Grooming Certification 1" />
-          <CertificateCard num={4} title="Professional Grooming Certification 2" />
-        </div>
-      </div>
+      )}
 
       {/* Training Certifications */}
-      <div>
-        <div className="flex items-center justify-center md:justify-start gap-3 mb-8 max-w-4xl mx-auto">
-          <GraduationCap className="w-6 h-6 text-brass-500" />
-          <h3 className="text-2xl font-bold text-forest-900 font-heading">Training Expertise</h3>
-          <div className="flex-1 h-px bg-taupe-200 ml-6 hidden sm:block"></div>
+      {(type === 'all' || type === 'training') && (
+        <div>
+          <div className="flex items-center justify-center md:justify-start gap-3 mb-8 max-w-4xl mx-auto">
+            <GraduationCap className="w-6 h-6 text-brass-500" />
+            <h3 className="text-2xl font-bold text-forest-900 font-heading">Certified Professional Trainer</h3>
+            <div className="flex-1 h-px bg-taupe-200 ml-6 hidden sm:block"></div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <CertificateCard num={2} title="Professional Training Certification 1" />
+            <CertificateCard num={3} title="Professional Training Certification 2" />
+          </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <CertificateCard num={2} title="Professional Training Certification 1" />
-          <CertificateCard num={3} title="Professional Training Certification 2" />
-        </div>
-      </div>
+      )}
 
       {/* Fullscreen Lightbox Modal */}
       {selectedImage && (
