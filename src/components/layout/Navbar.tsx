@@ -105,10 +105,10 @@ export default function Navbar() {
           
           {/* Social Icons */}
           <div className="flex items-center gap-3 mr-2">
-            <a href="https://www.instagram.com/the.furstylist?igsi=cXp4MjY4bmIyajMy" target="_blank" rel="noopener noreferrer" className={cn("transition-colors hover:text-brass-500", (isDark && !isMobileMenuOpen) ? "text-white" : "text-forest-900")} aria-label="Instagram">
+            <a href="https://www.instagram.com/thebarkandbond?igsi=cXp4MjY4bmIyajMy" target="_blank" rel="noopener noreferrer" className={cn("transition-colors hover:text-brass-500", (isDark && !isMobileMenuOpen) ? "text-white" : "text-forest-900")} aria-label="Instagram">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
             </a>
-            <a href="https://www.facebook.com/share/1Efomb5y9s/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className={cn("transition-colors hover:text-brass-500", (isDark && !isMobileMenuOpen) ? "text-white" : "text-forest-900")} aria-label="Facebook">
+            <a href="https://www.facebook.com/share/1Jy175Qxnv/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className={cn("transition-colors hover:text-brass-500", (isDark && !isMobileMenuOpen) ? "text-white" : "text-forest-900")} aria-label="Facebook">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
             </a>
           </div>
@@ -159,10 +159,10 @@ export default function Navbar() {
           <div className="flex flex-col gap-4 px-6 mt-auto pb-10">
             {/* Mobile Socials */}
             <div className="flex justify-center gap-6 py-4">
-              <a href="https://www.instagram.com/the.furstylist?igsi=cXp4MjY4bmIyajMy" target="_blank" rel="noopener noreferrer" className="text-forest-900 hover:text-brass-500" aria-label="Instagram">
+              <a href="https://www.instagram.com/thebarkandbond?igsi=cXp4MjY4bmIyajMy" target="_blank" rel="noopener noreferrer" className="text-forest-900 hover:text-brass-500" aria-label="Instagram">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
               </a>
-              <a href="https://www.facebook.com/share/1Efomb5y9s/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-forest-900 hover:text-brass-500" aria-label="Facebook">
+              <a href="https://www.facebook.com/share/1Jy175Qxnv/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-forest-900 hover:text-brass-500" aria-label="Facebook">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
               </a>
             </div>

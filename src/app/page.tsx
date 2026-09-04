@@ -132,7 +132,7 @@ export default function Home() {
               <div className="space-y-8">
                 <div>
                   <p className="text-xl md:text-2xl text-taupe-200 leading-relaxed font-light mb-6">
-                    A dog trained by the <span className="text-brass-400 font-medium">Bark &amp; Bond Team</span> went on to win the <span className="text-white font-semibold">Overall Championship</span> at a prestigious dog show — a testament to the discipline, dedication, and elite handling that defines Bark &amp; Bond.
+                    Meet <span className="text-white font-semibold">Yako</span>. Trained by the <span className="text-brass-400 font-medium">Bark &amp; Bond Team</span>, Yako went on to dominate the ring at a prestigious dog show — a testament to the discipline, dedication, and elite handling that defines our training program.
                   </p>
                   <p className="text-taupe-400 leading-relaxed">
                     This isn&apos;t just training. This is building champions. The same level of expertise and care goes into every session, whether it&apos;s basic obedience or competition preparation.
@@ -141,17 +141,17 @@ export default function Home() {
 
                 {/* Achievement Stats */}
                 <div className="grid grid-cols-3 gap-6">
-                  <div className="text-center p-4 rounded-2xl bg-forest-800/50 border border-forest-700">
-                    <span className="text-3xl md:text-4xl font-bold text-brass-400 block mb-1">🏆</span>
-                    <span className="text-xs text-taupe-300 uppercase tracking-wider font-medium">Overall Champion</span>
+                  <div className="text-center p-4 rounded-2xl bg-forest-800/50 border border-forest-700 flex flex-col justify-center">
+                    <span className="text-3xl md:text-4xl font-bold text-brass-400 block mb-2">🏆</span>
+                    <span className="text-xs text-taupe-300 uppercase tracking-wider font-medium leading-tight">No.1 Best In Show</span>
                   </div>
-                  <div className="text-center p-4 rounded-2xl bg-forest-800/50 border border-forest-700">
-                    <span className="text-3xl md:text-4xl font-bold text-brass-400 block mb-1">8+</span>
-                    <span className="text-xs text-taupe-300 uppercase tracking-wider font-medium">Prizes Won</span>
+                  <div className="text-center p-4 rounded-2xl bg-forest-800/50 border border-forest-700 flex flex-col justify-center">
+                    <span className="text-3xl md:text-4xl font-bold text-brass-400 block mb-2">🥇</span>
+                    <span className="text-xs text-taupe-300 uppercase tracking-wider font-medium leading-tight">Best Of Breed</span>
                   </div>
-                  <div className="text-center p-4 rounded-2xl bg-forest-800/50 border border-forest-700">
-                    <span className="text-3xl md:text-4xl font-bold text-brass-400 block mb-1">5+</span>
-                    <span className="text-xs text-taupe-300 uppercase tracking-wider font-medium">Years of Expertise</span>
+                  <div className="text-center p-4 rounded-2xl bg-forest-800/50 border border-forest-700 flex flex-col justify-center">
+                    <span className="text-3xl md:text-4xl font-bold text-brass-400 block mb-2">⭐</span>
+                    <span className="text-xs text-taupe-300 uppercase tracking-wider font-medium leading-tight">Best Puppy In Show</span>
                   </div>
                 </div>
 
