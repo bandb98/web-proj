@@ -67,11 +67,16 @@ export default function ContactPage() {
                   <MessageCircle className="w-6 h-6 text-brass-500" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-forest-900 mb-2">Instagram</h3>
-                  <p className="text-taupe-600 mb-3">Follow us for updates and cute pictures!</p>
-                  <a href="https://www.instagram.com/the.furstylist?igsi=cXp4MjY4bmIyajMy" target="_blank" rel="noopener noreferrer" className="text-forest-900 font-semibold hover:text-brass-500 transition-colors">
-                    @the.furstylist
-                  </a>
+                  <h3 className="text-xl font-bold text-forest-900 mb-2">Social Media</h3>
+                  <p className="text-taupe-600 mb-4">Follow us for updates and cute pictures!</p>
+                  <div className="flex flex-col gap-2">
+                    <a href="https://www.instagram.com/thebarkandbond?igsi=cXp4MjY4bmIyajMy" target="_blank" rel="noopener noreferrer" className="text-forest-900 font-semibold hover:text-brass-500 transition-colors flex items-center gap-2">
+                      <span className="text-brass-600">IG:</span> @thebarkandbond
+                    </a>
+                    <a href="https://www.facebook.com/share/1Jy175Qxnv/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-forest-900 font-semibold hover:text-brass-500 transition-colors flex items-center gap-2">
+                      <span className="text-brass-600">FB:</span> Bark & Bond
+                    </a>
+                  </div>
                 </div>
               </div>
 
