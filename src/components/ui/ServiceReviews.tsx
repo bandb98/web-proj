@@ -16,10 +16,13 @@ export default function ServiceReviews({ reviews }: ServiceReviewsProps) {
   return (
     <section className="py-16">
       <div className="max-w-7xl mx-auto px-6">
-        <AnimatedSection className="mb-10 text-center">
-          <h3 className="text-2xl md:text-3xl font-bold text-forest-900 font-heading mb-4">
+        <AnimatedSection className="mb-12 text-center">
+          <h3 className="text-2xl md:text-3xl font-bold text-forest-900 font-heading mb-3">
             What Our <span className="text-brass-500">Clients Say</span>
           </h3>
+          <p className="text-taupe-600 text-sm mb-6 max-w-lg mx-auto">
+            Verified feedback sourced directly from our <a href="https://www.google.com/maps/place/Bark+%26+Bond/@12.9063733,80.099992,17z/data=!4m16!1m9!3m8!1s0x3a525f68378309ab:0x9833293f18bbb226!2sBark+%26+Bond!8m2!3d12.9063733!4d80.1025669!9m1!1b1!16s%2Fg%2F11zfhnk97s!3m5!1s0x3a525f68378309ab:0x9833293f18bbb226!8m2!3d12.9063733!4d80.1025669!16s%2Fg%2F11zfhnk97s?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="text-brass-600 font-medium hover:text-brass-500 transition-colors underline underline-offset-4">Google Business Profile</a>.
+          </p>
           <div className="w-16 h-px bg-brass-400 mx-auto"></div>
         </AnimatedSection>
 

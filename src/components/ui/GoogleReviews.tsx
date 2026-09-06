@@ -24,11 +24,12 @@ const reviews = [
   { name: "Niranjan", text: "I had a really great experience with Bark & Bond! I took daily walking service for my dog Milo..and Their walking service was excellent, and they were very punctual and professional. They took good care and made sure everything was handled smoothly. Really appreciate their reliability and service. Highly recommended! 🐾❤️" },
   { name: "Kamal", text: "I purchased my Shih Tzu from Bark N Bond 3 years ago, They provided me with an excellent-quality puppy who has grown into a very healthy, loving, and wonderful companion for our family. Even after 3 years, our Shih Tzu continues to bring so much happiness and love into our home. He has been a perfect family companion, and we are truly grateful to Bark N Bond for bringing him into our lives. Thank you to the entire Bark N Bond team for providing us with such a healthy and adorable puppy. Highly recommended! ❤️🐾" },
   { name: "Abilash Rokze", text: "I Had a great experience with Bark & Bond for my pet’s grooming! The groomer was professional, gentle, and handled my pet with great care. The doorstep service was extremely convenient and saved me a lot of time. My pet looked clean, fresh, and well-groomed after the session. Highly recommended Bark & Bond for their excellent service and pet-friendly approach" },
-  { name: "Gau Tam", text: "Really happy with the training provided by Bark N Bond! They trained my dog very well and brought a lot of positive changes in his behaviour. The trainers were patient, caring, and handled my dog in a very professional manner. I’m really glad I chose Bark N Bond for my dog’s training. Highly recommended for anyone looking for good and reliable dog training! ♥️" }
+  { name: "Gau Tam", text: "Really happy with the training provided by Bark N Bond! They trained my dog very well and brought a lot of positive changes in his behaviour. The trainers were patient, caring, and handled my dog in a very professional manner. I’m really glad I chose Bark N Bond for my dog’s training. Highly recommended for anyone looking for good and reliable dog training! ♥️" },
+  { name: "Alex Rtr", text: "Ive been taking service from bark & bond for almost a year of time.. I can suggest this team for door step grooming because they are best to handle all the pets especially pets with high temperament Thank you Bark & bond for cost efficient and best service" }
 ];
 
-const topRow = reviews.slice(0, 10);
-const bottomRow = reviews.slice(10, 20);
+const topRow = reviews.slice(0, 11);
+const bottomRow = reviews.slice(11, 21);
 
 export default function GoogleReviews() {
   return (
