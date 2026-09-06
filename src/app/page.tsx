@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import { Scissors, GraduationCap, PawPrint, Heart, Shield, ChevronDown, ArrowRight } from "lucide-react";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import GoogleReviews from "@/components/ui/GoogleReviews";
+
 import ChampionshipCarousel from "@/components/ui/ChampionshipCarousel";
 import { getWhatsAppLink } from "@/lib/utils";
 
@@ -251,7 +253,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 04: Final CTA */}
+      {/* 04: Google Reviews */}
+      <GoogleReviews />
+
+      {/* 05: Final CTA */}
       <section className="py-16 lg:py-24 bg-forest-900 relative overflow-hidden bg-noise">
         <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
           <AnimatedSection animation="fade-up">

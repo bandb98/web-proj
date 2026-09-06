@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import { getWhatsAppLink } from '@/lib/utils';
 import { ShieldCheck, Info } from 'lucide-react';
+import ServiceReviews from "@/components/ui/ServiceReviews";
 
 export const metadata: Metadata = {
   title: 'Stud Services | Bark & Bond',

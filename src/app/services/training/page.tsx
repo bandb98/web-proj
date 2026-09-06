@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import { FAQAccordion } from '@/components/ui/FAQAccordion';
 import CertificateGallery from "@/components/ui/CertificateGallery";
+import ServiceReviews from "@/components/ui/ServiceReviews";
 
 import { getWhatsAppLink } from '@/lib/utils';
 import { Check, Clock, ShieldCheck, ArrowRight, Brain, Target, User, HeartHandshake } from 'lucide-react';
