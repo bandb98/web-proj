@@ -61,7 +61,7 @@ export default function GoogleReviews() {
               <span className="text-brass-600">Trusted by Owners.</span>
             </h2>
             <p className="text-taupe-600 text-lg">
-              Based on 24+ verified 5-star reviews on Google.
+              Based on 30+ verified 5-star reviews on Google.
             </p>
           </AnimatedSection>
 
