@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import CertificateGallery from "@/components/ui/CertificateGallery";
+import BeforeAfterShowcase from "@/components/ui/BeforeAfterShowcase";
 import ServiceReviews from "@/components/ui/ServiceReviews";
 
 import { FAQAccordion } from '@/components/ui/FAQAccordion';
@@ -93,6 +94,9 @@ export default function GroomingPage() {
         { name: "Karthik Subramaniam", text: "Really happy with the door-step grooming service... He handled my Shih Tzu so patiently without causing any stress and gave such a beautiful finishing cut.. My dog looked absolutely gorgeous after the grooming!" },
         { name: "Alex Rtr", text: "Ive been taking service from bark & bond for almost a year of time.. I can suggest this team for door step grooming because they are best to handle all the pets especially pets with high temperament Thank you Bark & bond for cost efficient and best service" }
       ]} />
+
+      {/* Before & After Transformation */}
+      <BeforeAfterShowcase />
 
       {/* Packages Section */}
       <section className="py-24 lg:py-32 bg-pearl">

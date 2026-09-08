@@ -25,11 +25,20 @@ const reviews = [
   { name: "Kamal", text: "I purchased my Shih Tzu from Bark N Bond 3 years ago, They provided me with an excellent-quality puppy who has grown into a very healthy, loving, and wonderful companion for our family. Even after 3 years, our Shih Tzu continues to bring so much happiness and love into our home. He has been a perfect family companion, and we are truly grateful to Bark N Bond for bringing him into our lives. Thank you to the entire Bark N Bond team for providing us with such a healthy and adorable puppy. Highly recommended! ❤️🐾" },
   { name: "Abilash Rokze", text: "I Had a great experience with Bark & Bond for my pet’s grooming! The groomer was professional, gentle, and handled my pet with great care. The doorstep service was extremely convenient and saved me a lot of time. My pet looked clean, fresh, and well-groomed after the session. Highly recommended Bark & Bond for their excellent service and pet-friendly approach" },
   { name: "Gau Tam", text: "Really happy with the training provided by Bark N Bond! They trained my dog very well and brought a lot of positive changes in his behaviour. The trainers were patient, caring, and handled my dog in a very professional manner. I’m really glad I chose Bark N Bond for my dog’s training. Highly recommended for anyone looking for good and reliable dog training! ♥️" },
-  { name: "Alex Rtr", text: "Ive been taking service from bark & bond for almost a year of time.. I can suggest this team for door step grooming because they are best to handle all the pets especially pets with high temperament Thank you Bark & bond for cost efficient and best service" }
+  { name: "Alex Rtr", text: "Ive been taking service from bark & bond for almost a year of time.. I can suggest this team for door step grooming because they are best to handle all the pets especially pets with high temperament Thank you Bark & bond for cost efficient and best service" },
+  { name: "Emmanuel Princeton", text: "Bought our Toy puppy Mona from Bark & Bond 8 years ago, and she's still healthy, happy and doing great! ❤️ She has honestly become such an important part of our family and changed our life in the best way. Really thankful to Bark & Bond for giving us such a wonderful puppy." },
+  { name: "imran ahamed", text: "Really happy with the service from Bark & Bond They're professional friendly, and do a great job. The doorstep grooming service is really convenient too. Definitely recommend them if you're looking for a reliable pet grooming service." },
+  { name: "Lavanya Mahendiran", text: "Loved the work and very professional, would like to continue. Thank you team and highly recommend." },
+  { name: "Subashree Ramesh", text: "Excellent service" },
+  { name: "Revathi Suresh", text: "Naveenkumar is a thorough professional and his handling of the pet is gentle but firm. I have been using this grooming service for the past two years and am very satisfied with the quality of service" },
+  { name: "Rohith", text: "Great work from Bark & Bond...highly recommend to all the pet parents..." },
+  { name: "Abul Hussain", text: "Very neat and professional work" },
+  { name: "Pritha Hari", text: "Naveen has been grooming my pet Lucky past 2 years. Very professional and trustworthy person. Excellent love and care shown always." },
+  { name: "Sujith K", text: "Very neat and hygienic work from Bark &Bond team ❤️"}
 ];
 
-const topRow = reviews.slice(0, 11);
-const bottomRow = reviews.slice(11, 21);
+const topRow = reviews.slice(0, 15);
+const bottomRow = reviews.slice(15, 30);
 
 export default function GoogleReviews() {
   return (

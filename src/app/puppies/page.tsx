@@ -68,7 +68,7 @@ export default function PuppiesPage() {
       <ServiceReviews reviews={[
         { name: "Kamal", text: "I purchased my Shih Tzu from Bark N Bond 3 years ago, They provided me with an excellent-quality puppy who has grown into a very healthy, loving, and wonderful companion for our family. Even after 3 years, our Shih Tzu continues to bring so much happiness..." },
         { name: "Akash Komagan", text: "I got my GSD puppy from them 8 months ago when he was just 35 days old…and he came with KCI certification. He has turned out to be an excellent-quality dog with a really good character. What I really appreciate is that they still guide us..." },
-        { name: "Raghu", text: "It was a great experience, from buying a puppy to training. They did well, highly recommended." }
+        { name: "Emmanuel Princeton", text: "Bought our Toy puppy Mona from Bark & Bond 8 years ago, and she's still healthy, happy and doing great! ❤️ She has honestly become such an important part of our family and changed our life in the best way. Really thankful to Bark & Bond for giving us such a wonderful puppy." }
       ]} />
 
       {/* Available Breeds (Moved to Top) */}
