@@ -55,6 +55,45 @@ export default function StudPage() {
             </div>
           </AnimatedSection>
 
+          {/* Featured Studs */}
+          <AnimatedSection delay={50} className="mb-16">
+            <h3 className="text-2xl font-bold text-forest-900 mb-8 font-heading text-center">Featured Premium Studs</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white rounded-3xl p-4 shadow-lg border border-taupe-200 overflow-hidden group">
+                <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden mb-4">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img 
+                    src="/stud male/stud2.jpeg" 
+                    alt="Doberman Stud" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute top-4 right-4 bg-brass-400 text-forest-900 text-xs font-bold px-3 py-1 rounded-full shadow-lg uppercase tracking-wider">
+                    KCI Registered
+                  </div>
+                </div>
+                <h4 className="text-xl font-bold text-forest-900 mb-2 px-2">Champion Lineage Doberman</h4>
+                <p className="text-taupe-600 text-sm px-2 mb-2">Exceptional conformation, deep rich color, and a highly stable temperament.</p>
+              </div>
+
+              <div className="bg-white rounded-3xl p-4 shadow-lg border border-taupe-200 overflow-hidden group">
+                <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden mb-4">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img 
+                    src="/stud male/stud1.jpeg" 
+                    alt="German Shepherd Stud" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute top-4 right-4 bg-brass-400 text-forest-900 text-xs font-bold px-3 py-1 rounded-full shadow-lg uppercase tracking-wider">
+                    KCI Registered
+                  </div>
+                </div>
+                <h4 className="text-xl font-bold text-forest-900 mb-2 px-2">Premium German Shepherd</h4>
+                <p className="text-taupe-600 text-sm px-2 mb-2">Heavy bone structure, striking pigmentation, and proven breeding success.</p>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Available Breeds */}
           <AnimatedSection delay={100} className="bg-white rounded-3xl p-10 shadow-lg border border-taupe-200">
             <h3 className="text-2xl font-bold text-forest-900 mb-8 font-heading text-center border-b border-taupe-200 pb-6">Available Breeds</h3>
             

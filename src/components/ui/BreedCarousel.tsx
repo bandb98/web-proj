@@ -5,14 +5,63 @@ import { ChevronLeft, ChevronRight, Info } from "lucide-react";
 import { getWhatsAppLink } from "@/lib/utils";
 
 const breeds = [
-  { name: "Shih Tzu", trait: "Affectionate & Playful", img: "/breeds/shih-tzu.jpg" },
-  { name: "Doberman", trait: "Loyal & Protective", img: "/breeds/doberman.jpg" },
-  { name: "Beagle", trait: "Merry & Curious", img: "/breeds/beagle.jpg" },
-  { name: "Poodle", trait: "Intelligent & Active", img: "/breeds/poodle.jpg" },
-  { name: "Golden Retriever", trait: "Intelligent & Gentle", img: "/breeds/golden.jpg" },
-  { name: "Labrador Retriever", trait: "Friendly & Loyal", img: "/breeds/labrador.jpg" },
-  { name: "German Shepherd", trait: "Confident & Smart", img: "/breeds/gsd.jpg" }
+  { name: "German Shepherd", trait: "Confident & Smart", images: ["/breeds/gsd-1.jpeg", "/breeds/gsd-2.png"] },
+  { name: "Shih Tzu", trait: "Affectionate & Playful" },
+  { name: "Doberman", trait: "Loyal & Protective" },
+  { name: "Beagle", trait: "Merry & Curious" },
+  { name: "Poodle", trait: "Intelligent & Active" },
+  { name: "Golden Retriever", trait: "Intelligent & Gentle" },
+  { name: "Labrador Retriever", trait: "Friendly & Loyal" }
 ];
+
+function CardImageRotator({ images, name }: { images?: string[], name: string }) {
+  const [idx, setIdx] = useState(0);
+
+  useEffect(() => {
+    if (!images || images.length <= 1) return;
+    const timer = setInterval(() => {
+      setIdx((prev) => (prev + 1) % images.length);
+    }, 2500); // 2.5 seconds interval
+    return () => clearInterval(timer);
+  }, [images]);
+
+  if (!images || images.length === 0) {
+    return (
+      <div className="absolute inset-0 flex items-center justify-center text-taupe-400 text-sm font-medium">
+        <span className="opacity-50">Upload {name} Image</span>
+      </div>
+    );
+  }
+
+  return (
+    <>
+      {images.map((img, i) => (
+        <div 
+          key={i}
+          className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ${
+            i === idx ? 'opacity-100 relative z-10' : 'opacity-0 z-0'
+          }`}
+        >
+          {/* Blurred backdrop to elegantly fill any empty space */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img 
+            src={img} 
+            alt="" 
+            className="absolute inset-0 w-full h-full object-cover blur-xl opacity-40 scale-110" 
+            aria-hidden="true"
+          />
+          {/* Actual image contained so nothing gets cut */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={img}
+            alt={`${name} ${i + 1}`}
+            className="absolute inset-0 w-full h-full object-contain p-2"
+          />
+        </div>
+      ))}
+    </>
+  );
+}
 
 export default function BreedCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -61,20 +110,14 @@ export default function BreedCarousel() {
         >
           {breeds.map((breed, idx) => (
             <div 
-              key={breed.name} 
+              key={`${breed.name}-${idx}`} 
               className="flex-none px-4"
               style={{ width: `${100 / itemsPerView}%` }}
             >
               <div className="bg-white rounded-3xl p-8 border border-taupe-200 shadow-sm hover:shadow-lg hover:border-brass-400 transition-all text-center h-full flex flex-col group/card">
-                {/* Visual Placeholder for Image */}
+                {/* Visual Image / Placeholder */}
                 <div className="w-full aspect-square bg-sage-50 rounded-2xl mb-6 flex items-center justify-center border border-taupe-200 group-hover/card:border-brass-300 transition-colors overflow-hidden relative">
-                   <div className="absolute inset-0 flex items-center justify-center text-taupe-400 text-sm font-medium">
-                     <span className="opacity-50">Upload {breed.name} Image</span>
-                   </div>
-                   {/* 
-                     We can drop real images here later like:
-                     <img src={breed.img} alt={breed.name} className="w-full h-full object-cover relative z-10" />
-                   */}
+                  <CardImageRotator images={breed.images} name={breed.name} />
                 </div>
                 <h3 className="text-2xl font-bold text-forest-900 mb-2 font-heading">{breed.name}</h3>
                 <p className="text-brass-600 font-medium text-sm tracking-wider uppercase mb-6 flex-grow">{breed.trait}</p>

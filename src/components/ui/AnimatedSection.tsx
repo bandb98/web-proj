@@ -1,35 +1,51 @@
 "use client";
 
-import React, { ReactNode } from "react";
-import { motion, useReducedMotion } from "framer-motion";
+import React, { ReactNode, useEffect, useRef, useState } from "react";
 
 interface AnimatedSectionProps {
   children: ReactNode;
   className?: string;
   delay?: number;
-  animation?: string; // accepted but not used for different variants yet
+  animation?: string;
 }
 
 export function AnimatedSection({ children, className = "", delay = 0 }: AnimatedSectionProps) {
-  const shouldReduceMotion = useReducedMotion();
+  const ref = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
 
-  // Normalize delay: if > 10, treat as milliseconds and convert to seconds
-  const normalizedDelay = delay > 10 ? delay / 1000 : delay;
+  // Normalize delay: if > 10, treat as milliseconds; otherwise treat as seconds and convert
+  const delayMs = delay > 10 ? delay : delay * 1000;
 
-  if (shouldReduceMotion) {
-    return <div className={className}>{children}</div>;
-  }
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(el);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <motion.div
-      initial={{ y: 30, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 1 }}
-      viewport={{ once: true, margin: "-10%" }}
-      transition={{ duration: 0.6, delay: normalizedDelay, ease: "easeOut" }}
+    <div
+      ref={ref}
       className={className}
+      style={{
+        opacity: isVisible ? 1 : 0,
+        transform: isVisible ? "translateY(0)" : "translateY(24px)",
+        transition: `opacity 0.5s ease-out ${delayMs}ms, transform 0.5s ease-out ${delayMs}ms`,
+      }}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }
 

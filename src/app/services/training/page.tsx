@@ -3,6 +3,7 @@ import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import { FAQAccordion } from '@/components/ui/FAQAccordion';
 import CertificateGallery from "@/components/ui/CertificateGallery";
 import ServiceReviews from "@/components/ui/ServiceReviews";
+import TrainingWinsCarousel from "@/components/ui/TrainingWinsCarousel";
 
 import { getWhatsAppLink } from '@/lib/utils';
 import { Check, Clock, ShieldCheck, ArrowRight, Brain, Target, User, HeartHandshake } from 'lucide-react';
@@ -61,6 +62,57 @@ export default function TrainingPage() {
           <p className="text-taupe-500 text-lg max-w-2xl mx-auto">
             Professional, rewards-based training for a well-mannered and confident companion. Backed by 5+ years of expertise.
           </p>
+        </div>
+      </section>
+
+      {/* Proven Results — Competition Wins */}
+      <section className="py-24 lg:py-32 bg-forest-900 relative overflow-hidden bg-noise">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-brass-500/8 rounded-full blur-[100px] pointer-events-none"></div>
+        
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            
+            {/* Carousel */}
+            <AnimatedSection>
+              <TrainingWinsCarousel />
+            </AnimatedSection>
+
+            {/* Text + Stats */}
+            <AnimatedSection delay={200}>
+              <div className="space-y-8">
+                <div>
+                  <span className="text-brass-500 text-xs font-bold tracking-[0.3em] uppercase mb-4 block">Proven Results</span>
+                  <h2 className="text-3xl md:text-4xl font-bold text-white font-heading mb-4">
+                    Trained by Us. <br />
+                    <span className="text-brass-400">Winning Worldwide.</span>
+                  </h2>
+                  <p className="text-taupe-300 leading-relaxed">
+                    Yako, trained by the Bark &amp; Bond team, went on to compete in prestigious UK dog shows — winning titles at multiple championship-level events under internationally renowned judges.
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="text-center p-5 rounded-2xl bg-forest-800/50 border border-forest-700">
+                    <span className="text-3xl font-bold text-brass-400 block mb-1">5</span>
+                    <span className="text-xs text-taupe-300 uppercase tracking-wider font-medium">Competition Wins</span>
+                  </div>
+                  <div className="text-center p-5 rounded-2xl bg-forest-800/50 border border-forest-700">
+                    <span className="text-3xl font-bold text-brass-400 block mb-1">UK</span>
+                    <span className="text-xs text-taupe-300 uppercase tracking-wider font-medium">International Shows</span>
+                  </div>
+                </div>
+
+                <a 
+                  href={getWhatsAppLink("Hi! I saw Yako's competition wins on your website. I'd like to know more about your training programs.")}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-brass-500 hover:bg-brass-400 text-forest-900 font-semibold rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(214,163,101,0.3)]"
+                >
+                  Train Your Champion <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+            </AnimatedSection>
+          </div>
         </div>
       </section>
 

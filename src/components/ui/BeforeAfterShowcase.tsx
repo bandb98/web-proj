@@ -21,6 +21,18 @@ const transforms: TransformData[] = [
     profile: "/before-after/Bichon/after 2.jpeg",
     description: "From heavily matted and tangled coat to a perfectly sculpted, show-quality finish. This level of precision requires expert scissor work and deep breed knowledge.",
   },
+  {
+    breed: "Shih Tzu",
+    before: "/before-after/ShihTzu/BEFORE.jpeg",
+    after: "/before-after/ShihTzu/AFTER.jpeg",
+    description: "A signature Shih Tzu 'puppy cut'. We removed the unruly, overgrown coat and gave them a fresh, adorable teddy-bear face while keeping the ears and tail fluffy.",
+  },
+  {
+    breed: "Chow Chow",
+    before: "/before-after/ChowChow/BEFORE.jpeg",
+    after: "/before-after/ChowChow/AFTER.jpeg",
+    description: "Expert deshedding and styling for a double-coated Chow Chow. We thinned out the heavy undercoat to keep them cool and shaped the outer coat for a majestic lion-like appearance.",
+  }
 ];
 
 export default function BeforeAfterShowcase() {

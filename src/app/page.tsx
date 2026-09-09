@@ -2,7 +2,6 @@ import { Metadata } from "next";
 import { Scissors, GraduationCap, PawPrint, Heart, Shield, ChevronDown, ArrowRight } from "lucide-react";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import GoogleReviews from "@/components/ui/GoogleReviews";
-
 import ChampionshipCarousel from "@/components/ui/ChampionshipCarousel";
 import { getWhatsAppLink } from "@/lib/utils";
 
