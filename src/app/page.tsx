@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Scissors, GraduationCap, PawPrint, Heart, Shield, ChevronDown, ArrowRight } from "lucide-react";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import GoogleReviews from "@/components/ui/GoogleReviews";
-import ChampionshipCarousel from "@/components/ui/ChampionshipCarousel";
+import ChampionShowcase from "@/components/ui/ChampionShowcase";
 import { getWhatsAppLink } from "@/lib/utils";
 
 export const metadata: Metadata = {
@@ -122,49 +122,9 @@ export default function Home() {
             </div>
           </AnimatedSection>
 
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* Photo */}
-            <AnimatedSection animation="fade-up" delay={200}>
-              <ChampionshipCarousel />
-            </AnimatedSection>
-
-            {/* Stats & Description */}
-            <AnimatedSection animation="fade-up" delay={400}>
-              <div className="space-y-8">
-                <div>
-                  <p className="text-xl md:text-2xl text-taupe-200 leading-relaxed font-light mb-6">
-                    Meet <span className="text-white font-semibold">Yako</span>. Trained by the <span className="text-brass-400 font-medium">Bark &amp; Bond Team</span>, Yako went on to dominate the ring at a prestigious dog show — a testament to the discipline, dedication, and elite handling that defines our training program.
-                  </p>
-                  <p className="text-taupe-400 leading-relaxed">
-                    This isn&apos;t just training. This is building champions. The same level of expertise and care goes into every session, whether it&apos;s basic obedience or competition preparation.
-                  </p>
-                </div>
-
-                {/* Achievement Stats */}
-                <div className="grid grid-cols-3 gap-6">
-                  <div className="text-center p-4 rounded-2xl bg-forest-800/50 border border-forest-700 flex flex-col justify-center">
-                    <span className="text-3xl md:text-4xl font-bold text-brass-400 block mb-2">🏆</span>
-                    <span className="text-xs text-taupe-300 uppercase tracking-wider font-medium leading-tight">No.1 Best In Show</span>
-                  </div>
-                  <div className="text-center p-4 rounded-2xl bg-forest-800/50 border border-forest-700 flex flex-col justify-center">
-                    <span className="text-3xl md:text-4xl font-bold text-brass-400 block mb-2">🥇</span>
-                    <span className="text-xs text-taupe-300 uppercase tracking-wider font-medium leading-tight">Best Of Breed</span>
-                  </div>
-                  <div className="text-center p-4 rounded-2xl bg-forest-800/50 border border-forest-700 flex flex-col justify-center">
-                    <span className="text-3xl md:text-4xl font-bold text-brass-400 block mb-2">⭐</span>
-                    <span className="text-xs text-taupe-300 uppercase tracking-wider font-medium leading-tight">Best Puppy In Show</span>
-                  </div>
-                </div>
-
-                <a 
-                  href="/services/training" 
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-brass-500 hover:bg-brass-400 text-forest-900 font-semibold rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(214,163,101,0.3)]"
-                >
-                  Explore Our Training <ArrowRight className="w-4 h-4" />
-                </a>
-              </div>
-            </AnimatedSection>
-          </div>
+          <AnimatedSection animation="fade-up" delay={200}>
+            <ChampionShowcase />
+          </AnimatedSection>
         </div>
       </section>
 
