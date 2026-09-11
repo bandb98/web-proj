@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { getWhatsAppLink } from "@/lib/utils";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Mail, Phone } from "lucide-react";
 
 const footerLinks = {
   services: [
@@ -23,7 +23,7 @@ export default function Footer() {
       {/* Gold accent line at top */}
       <div className="h-px bg-gradient-to-r from-transparent via-brass-500 to-transparent"></div>
 
-      <div className="max-w-7xl mx-auto px-6 pt-20 pb-10">
+      <div className="max-w-7xl mx-auto px-6 pt-20 pb-24 md:pb-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-20">
           {/* Brand */}
           <div className="md:col-span-5">
@@ -117,7 +117,6 @@ export default function Footer() {
                   Instagram
                 </a>
               </li>
-              <li className="text-taupe-500 text-sm">Tambaram, Chennai (Door-step)</li>
             </ul>
           </div>
         </div>
@@ -137,10 +136,16 @@ export default function Footer() {
             </a>
           </div>
 
-          <div className="flex items-center gap-6 text-xs text-taupe-500 font-light order-1 md:order-3">
-            <span>5+ Years Experience</span>
-            <span className="w-1 h-1 rounded-full bg-brass-500"></span>
-            <span>Professional Team</span>
+          <div className="flex items-center gap-4 text-xs text-taupe-500 font-light order-1 md:order-3 md:pr-20">
+            <span>Designed & Developed by <span className="font-bold text-taupe-400">Vansh V</span></span>
+            <div className="flex items-center gap-3 border-l border-forest-700 pl-4">
+              <a href="mailto:vanshv0920@gmail.com" className="hover:text-brass-500 transition-colors" aria-label="Email Vansh V">
+                <Mail className="w-4 h-4" />
+              </a>
+              <a href="tel:+917010526173" className="hover:text-brass-500 transition-colors" aria-label="Call Vansh V">
+                <Phone className="w-4 h-4" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
