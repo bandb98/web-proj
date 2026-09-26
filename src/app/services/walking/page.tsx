@@ -32,11 +32,14 @@ export default function WalkingPage() {
               Walking <span className="text-brass-500">Plans</span>
             </h2>
             <div className="w-16 h-px bg-brass-400 mx-auto mt-8 mb-6"></div>
-            <p className="text-taupe-600 text-lg">Consistent exercise tailored to your pet's stamina.</p>
+            <p className="text-taupe-600 text-lg">Consistent exercise tailored to your pet&apos;s stamina.</p>
             <div className="inline-flex items-center gap-2 mt-6 px-4 py-2 bg-sage-50 text-forest-900 rounded-full border border-sage-300 font-medium">
               <MapPin className="w-4 h-4 text-brass-600" />
-              Service Area: Tambaram & Surrounding areas (6-8km radius)
+              Walking 6–8 kms in Tambaram &amp; Surrounding Areas
             </div>
+            <p className="text-taupe-500 text-sm mt-3 max-w-lg mx-auto">
+              Plans cover 6–8 kms per walk. Charges will vary for extra kilometres — <a href={getWhatsAppLink("Hi! I'd like to know the charges for extra kms beyond 6-8 kms for pet walking.")} target="_blank" rel="noopener noreferrer" className="text-brass-600 hover:text-brass-500 underline underline-offset-2">contact us</a> for details.
+            </p>
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">

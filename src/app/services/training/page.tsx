@@ -6,7 +6,7 @@ import ServiceReviews from "@/components/ui/ServiceReviews";
 import ChampionShowcase from "@/components/ui/ChampionShowcase";
 
 import { getWhatsAppLink } from '@/lib/utils';
-import { Check, Clock, ShieldCheck, ArrowRight, Brain, Target, User, HeartHandshake } from 'lucide-react';
+import { Check, Clock, ShieldCheck, ArrowRight, Brain, Target, User, HeartHandshake, MapPin } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Dog Training | Bark & Bond',
@@ -59,14 +59,22 @@ export default function TrainingPage() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
             Dog <span className="text-brass-500">Training</span>
           </h1>
-          <p className="text-taupe-500 text-lg max-w-2xl mx-auto mb-8 lg:mb-12">
+          <p className="text-taupe-500 text-lg max-w-2xl mx-auto mb-4">
             Professional, rewards-based training for a well-mannered and confident companion. Backed by 5+ years of expertise.
+          </p>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-forest-800/60 text-white rounded-full border border-forest-700 font-medium text-sm">
+            <MapPin className="w-4 h-4 text-brass-500" />
+            Training covers 6–8 kms in Tambaram &amp; Surrounding Areas
+          </div>
+          <p className="text-taupe-500 text-xs mt-2 mb-8 lg:mb-12">
+            Charges will vary for extra kilometres beyond 6–8 kms.
           </p>
         </div>
       </section>
 
       {/* Proven Results — Competition Wins */}
-      <section className="pb-24 lg:pb-32 bg-forest-900 relative overflow-hidden bg-noise">
+      <section className="pb-24 lg:pb-32 bg-forest-900 relative overflow-hidden">
+        <div className="absolute inset-0 bg-noise opacity-30"></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-brass-500/8 rounded-full blur-[100px] pointer-events-none"></div>
         
         <div className="max-w-7xl mx-auto px-6 relative z-10">
