@@ -14,7 +14,7 @@ interface Champion {
 const champions: Champion[] = [
   {
     name: "Yako",
-    breed: "Wire Fox Terrier",
+    breed: "Doberman",
     description:
       "Trained by the Bark & Bond Team, Yako went on to dominate the ring at prestigious dog shows — a testament to the discipline, dedication, and elite handling that defines our training program.",
     photos: [
